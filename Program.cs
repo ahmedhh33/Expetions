@@ -13,10 +13,12 @@
             //Console.WriteLine(divide(3, 0));
             try
             {
-                Console.WriteLine(a[0] / a[2]);
+                Console.WriteLine(a[1] / a[0]);
                 Console.WriteLine(a[10] / a[3]);
-                Console.WriteLine(a[2] / a[3]);
-            } catch (DivideByZeroException ex)
+                Console.WriteLine(a[2] / a[3]);//once it found the exceptions it will print the exceptions message and go out try
+
+            }
+            catch (DivideByZeroException ex)
             {
                 Console.WriteLine($"divide by zero exeption");
             }
@@ -28,7 +30,7 @@
             {
                 Console.WriteLine(ex.Message);
             }
-            //Console.WriteLine(a[1] / a[1]);
+            Console.WriteLine(a[1] / a[1]);
         }
 
         static float divide(int a,int b)
